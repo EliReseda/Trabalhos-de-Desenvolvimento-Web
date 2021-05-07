@@ -7,9 +7,9 @@ h1{
 	text-transform: uppercase;
 }	
 
-body{
+/*body{
 	background: #000000;
-}
+}*/
 
 
 table{
@@ -18,7 +18,7 @@ table{
 	padding: 5px;	
 	width: 750px;
 	height: 700px;
-	background: #F8F8FF;
+/*	background: #F8F8FF;*/
 }
 
 
