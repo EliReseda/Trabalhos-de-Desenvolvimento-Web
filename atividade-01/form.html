@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Formulário</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src="js/script.js"></script>
+</head>
+<body onload="totalEstimado();">
+	<center>		
+		<center>
+		<table>
+		<tr>
+			<th>
+				<h1>Reserva Hotel-IFSP</h1>
+				<img src="img/ifsp.png" >
+				<br><br>
+					
+	<form action="">
+		<p>
+			<label for="name">
+			Nome Completo: <input type="text" id="nome">		
+		     </label>
+		</p>
+		<p>
+			<label for="email">
+			Email: <input type="email" id="email">		
+		    </label>
+		</p>
+		<p>	
+			<label for="repitaemail">
+			Repita o email: <input type="email" id="repitaemail">
+			</label>
+		</p>
+		<p>
+			<label>
+			Estado de origem: <select name="estados" id="estados">
+				<option value=""></option>
+				<option value="acre"> Acre (AC)</option>
+				<option value="alagoas"> Alagoas (AL)</option>
+				<option value="amapá"> Amapá (AP)</option>
+				<option value="amazonas"> Amazonas (AM)</option>
+				<option value="bahia"> Bahia (BA)</option>
+				<option value="ceara"> Ceará (CE)</option>
+				<option value="distrito federal"> Distrito Federal (DF)</option>
+				<option value="espirito Santos"> Espirito santos (ES)</option>
+				<option value="goias"> Goiás (GO)</option>
+				<option value="maranhao"> Maranhão (MA)</option>
+				<option value="mato grosso"> Mato Grosso (MT)</option>
+				<option value="mato grosso do sul"> Mato Grosso do Sul (MS)</option>
+				<option value="minas gerais"> Minas Gerais (MG)</option>
+				<option value="para"> Pará (PA)</option>
+				<option value="paraiba"> Paraíba (PR)</option>
+				<option value="paraná"> Paraná (PR)</option>
+				<option value="pernambuco"> Pernambuco (PE)</option>
+				<option value="piauí"> Piauí (PI)</option>
+				<option value="rio de janeiro"> Rio de Janeiro (RJ)</option>
+				<option value="rio grande do norte"> Rio Grande do Norte (RN)</option>
+				<option value="rio grande do sul"> Rio Grande do Sul (RS)</option>
+				<option value="rondonia"> Rondônia (RO)</option>
+				<option value="roraima"> Roraima (RR)</option>
+				<option value="santa catarina"> Santa Catarina (SC)</option>
+				<option value="sao Paulo"> São Paulo (SP)</option>
+				<option value="sergipe"> Sergipe (SE)</option>
+				<option value="tocantins"> Tocantins (TO)</option>
+			</select>		
+		     </label>
+		</p>
+		<p>
+			<label for="data">Data da chegada:</label>
+			<input type="date" id="data"/>	
+		</p>
+		<p>
+			<label for="quarto">Números de noites (quartos são R$ 99,00 por noite): </label>
+           <input type="number" oninput="totalEstimado()" id="quarto" step="1" min="1" max="30" value="1" />
+        <spam>(min 1, max 30) </spam><br> 	
+		<label for="convidado">Números de pessoas (adicional por convidado R$ 10,00 por noite): 
+        <input type="number" oninput="totalEstimado()" id="convidado" step="1" min="1" max="4" value="1" />
+        <spam>(min 1, max 4)</spam>	     
+		<br>
+		</label>
+		<p>
+			<label for="totalEstimado">Total estimado: R$ <output id="total"></output>
+        </label>
+		</p>
+		<p>
+			<label for="codigoProm">Código promocional:   </label>
+		  <input type="text" id="codigoProm">
+		
+		  
+		</p>
+		<p>
+			<center>
+			<input type="submit" value="Fazer Reserva" >
+		    </center>
+		</p>
+</form>
+</th>
+</tr>
+
+</table>
+</center>
+</body>
